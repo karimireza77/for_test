@@ -50,4 +50,4 @@ ssh -T git@github.com
 
 # Senario 6
 git checkout feature_branch
-git push 
+git push -u origin feature_branch
