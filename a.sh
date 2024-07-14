@@ -44,10 +44,20 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 # copy the ssh key
 cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
-# do things on git hub
+# do things on git hub and select  allow to write
 # for test
 ssh -T git@github.com
 
 # Senario 6
 git checkout feature_branch
 git push -u origin feature_branch
+
+# Senario 7
+# switch to manin
+git checkout main
+
+# merege
+git merge feature_branch
+
+# push
+git push origin main
