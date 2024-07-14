@@ -15,4 +15,9 @@ git commit -m "Senario 1"
 # Senario 2
 git checkout -b feature-branch
 git branch
+echo "this is feature txt" > feature.txt
+git add .
+git commit -m "this is Senario 2"
+
+# Senario 3
 
